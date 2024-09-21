@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D0189582C9B51CC00AE738E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0189572C9B51CC00AE738E /* AppDelegate.swift */; };
+		5D01895A2C9B51CC00AE738E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0189592C9B51CC00AE738E /* SceneDelegate.swift */; };
+		5D01895C2C9B51CC00AE738E /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01895B2C9B51CC00AE738E /* SplashScreenViewController.swift */; };
+		5D01895F2C9B51CC00AE738E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D01895D2C9B51CC00AE738E /* Main.storyboard */; };
+		5D0189612C9B51CE00AE738E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D0189602C9B51CE00AE738E /* Assets.xcassets */; };
+		5D0189642C9B51CE00AE738E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D0189622C9B51CE00AE738E /* LaunchScreen.storyboard */; };
+		5D01896F2C9B51CF00AE738E /* WisdomLeafTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01896E2C9B51CF00AE738E /* WisdomLeafTests.swift */; };
+		5D0189792C9B51CF00AE738E /* WisdomLeafUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0189782C9B51CF00AE738E /* WisdomLeafUITests.swift */; };
+		5D01897B2C9B51CF00AE738E /* WisdomLeafUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01897A2C9B51CF00AE738E /* WisdomLeafUITestsLaunchTests.swift */; };
+		5D01898C2C9E2B4100AE738E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01898B2C9E2B4100AE738E /* MainViewController.swift */; };
+		5D01898E2C9E2C1800AE738E /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01898D2C9E2C1800AE738E /* MovieCell.swift */; };
+		5D0189902C9E2C4100AE738E /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01898F2C9E2C4100AE738E /* MovieModel.swift */; };
+		5D0189922C9E2C5D00AE738E /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0189912C9E2C5D00AE738E /* APIService.swift */; };
+		5D0189942C9E2C7400AE738E /* FavoritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0189932C9E2C7400AE738E /* FavoritesManager.swift */; };
+		5D0189962C9E69E600AE738E /* AppLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D0189952C9E69E500AE738E /* AppLogo.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D01896B2C9B51CF00AE738E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D01894C2C9B51CB00AE738E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D0189532C9B51CC00AE738E;
+			remoteInfo = WisdomLeaf;
+		};
+		5D0189752C9B51CF00AE738E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D01894C2C9B51CB00AE738E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D0189532C9B51CC00AE738E;
+			remoteInfo = WisdomLeaf;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5D0189542C9B51CC00AE738E /* WisdomLeaf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WisdomLeaf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D0189572C9B51CC00AE738E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5D0189592C9B51CC00AE738E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5D01895B2C9B51CC00AE738E /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		5D01895E2C9B51CC00AE738E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5D0189602C9B51CE00AE738E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D0189632C9B51CE00AE738E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5D0189652C9B51CE00AE738E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D01896A2C9B51CF00AE738E /* WisdomLeafTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WisdomLeafTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D01896E2C9B51CF00AE738E /* WisdomLeafTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisdomLeafTests.swift; sourceTree = "<group>"; };
+		5D0189742C9B51CF00AE738E /* WisdomLeafUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WisdomLeafUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D0189782C9B51CF00AE738E /* WisdomLeafUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisdomLeafUITests.swift; sourceTree = "<group>"; };
+		5D01897A2C9B51CF00AE738E /* WisdomLeafUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisdomLeafUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5D01898B2C9E2B4100AE738E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5D01898D2C9E2C1800AE738E /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		5D01898F2C9E2C4100AE738E /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		5D0189912C9E2C5D00AE738E /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		5D0189932C9E2C7400AE738E /* FavoritesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesManager.swift; sourceTree = "<group>"; };
+		5D0189952C9E69E500AE738E /* AppLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppLogo.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D0189512C9B51CC00AE738E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D0189672C9B51CF00AE738E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D0189712C9B51CF00AE738E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D01894B2C9B51CB00AE738E = {
+			isa = PBXGroup;
+			children = (
+				5D0189562C9B51CC00AE738E /* WisdomLeaf */,
+				5D01896D2C9B51CF00AE738E /* WisdomLeafTests */,
+				5D0189772C9B51CF00AE738E /* WisdomLeafUITests */,
+				5D0189552C9B51CC00AE738E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5D0189552C9B51CC00AE738E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D0189542C9B51CC00AE738E /* WisdomLeaf.app */,
+				5D01896A2C9B51CF00AE738E /* WisdomLeafTests.xctest */,
+				5D0189742C9B51CF00AE738E /* WisdomLeafUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D0189562C9B51CC00AE738E /* WisdomLeaf */ = {
+			isa = PBXGroup;
+			children = (
+				5D0189572C9B51CC00AE738E /* AppDelegate.swift */,
+				5D0189592C9B51CC00AE738E /* SceneDelegate.swift */,
+				5D01895B2C9B51CC00AE738E /* SplashScreenViewController.swift */,
+				5D01898B2C9E2B4100AE738E /* MainViewController.swift */,
+				5D01898D2C9E2C1800AE738E /* MovieCell.swift */,
+				5D01898F2C9E2C4100AE738E /* MovieModel.swift */,
+				5D0189912C9E2C5D00AE738E /* APIService.swift */,
+				5D0189932C9E2C7400AE738E /* FavoritesManager.swift */,
+				5D01895D2C9B51CC00AE738E /* Main.storyboard */,
+				5D0189602C9B51CE00AE738E /* Assets.xcassets */,
+				5D0189622C9B51CE00AE738E /* LaunchScreen.storyboard */,
+				5D0189652C9B51CE00AE738E /* Info.plist */,
+				5D0189952C9E69E500AE738E /* AppLogo.png */,
+			);
+			path = WisdomLeaf;
+			sourceTree = "<group>";
+		};
+		5D01896D2C9B51CF00AE738E /* WisdomLeafTests */ = {
+			isa = PBXGroup;
+			children = (
+				5D01896E2C9B51CF00AE738E /* WisdomLeafTests.swift */,
+			);
+			path = WisdomLeafTests;
+			sourceTree = "<group>";
+		};
+		5D0189772C9B51CF00AE738E /* WisdomLeafUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5D0189782C9B51CF00AE738E /* WisdomLeafUITests.swift */,
+				5D01897A2C9B51CF00AE738E /* WisdomLeafUITestsLaunchTests.swift */,
+			);
+			path = WisdomLeafUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D0189532C9B51CC00AE738E /* WisdomLeaf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D01897E2C9B51CF00AE738E /* Build configuration list for PBXNativeTarget "WisdomLeaf" */;
+			buildPhases = (
+				5D0189502C9B51CC00AE738E /* Sources */,
+				5D0189512C9B51CC00AE738E /* Frameworks */,
+				5D0189522C9B51CC00AE738E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WisdomLeaf;
+			productName = WisdomLeaf;
+			productReference = 5D0189542C9B51CC00AE738E /* WisdomLeaf.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D0189692C9B51CF00AE738E /* WisdomLeafTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D0189812C9B51CF00AE738E /* Build configuration list for PBXNativeTarget "WisdomLeafTests" */;
+			buildPhases = (
+				5D0189662C9B51CF00AE738E /* Sources */,
+				5D0189672C9B51CF00AE738E /* Frameworks */,
+				5D0189682C9B51CF00AE738E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D01896C2C9B51CF00AE738E /* PBXTargetDependency */,
+			);
+			name = WisdomLeafTests;
+			productName = WisdomLeafTests;
+			productReference = 5D01896A2C9B51CF00AE738E /* WisdomLeafTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5D0189732C9B51CF00AE738E /* WisdomLeafUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D0189842C9B51CF00AE738E /* Build configuration list for PBXNativeTarget "WisdomLeafUITests" */;
+			buildPhases = (
+				5D0189702C9B51CF00AE738E /* Sources */,
+				5D0189712C9B51CF00AE738E /* Frameworks */,
+				5D0189722C9B51CF00AE738E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D0189762C9B51CF00AE738E /* PBXTargetDependency */,
+			);
+			name = WisdomLeafUITests;
+			productName = WisdomLeafUITests;
+			productReference = 5D0189742C9B51CF00AE738E /* WisdomLeafUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D01894C2C9B51CB00AE738E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					5D0189532C9B51CC00AE738E = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					5D0189692C9B51CF00AE738E = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 5D0189532C9B51CC00AE738E;
+					};
+					5D0189732C9B51CF00AE738E = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 5D0189532C9B51CC00AE738E;
+					};
+				};
+			};
+			buildConfigurationList = 5D01894F2C9B51CB00AE738E /* Build configuration list for PBXProject "WisdomLeaf" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D01894B2C9B51CB00AE738E;
+			productRefGroup = 5D0189552C9B51CC00AE738E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D0189532C9B51CC00AE738E /* WisdomLeaf */,
+				5D0189692C9B51CF00AE738E /* WisdomLeafTests */,
+				5D0189732C9B51CF00AE738E /* WisdomLeafUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D0189522C9B51CC00AE738E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D0189962C9E69E600AE738E /* AppLogo.png in Resources */,
+				5D0189642C9B51CE00AE738E /* LaunchScreen.storyboard in Resources */,
+				5D0189612C9B51CE00AE738E /* Assets.xcassets in Resources */,
+				5D01895F2C9B51CC00AE738E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D0189682C9B51CF00AE738E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D0189722C9B51CF00AE738E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D0189502C9B51CC00AE738E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D0189902C9E2C4100AE738E /* MovieModel.swift in Sources */,
+				5D0189922C9E2C5D00AE738E /* APIService.swift in Sources */,
+				5D01895C2C9B51CC00AE738E /* SplashScreenViewController.swift in Sources */,
+				5D01898C2C9E2B4100AE738E /* MainViewController.swift in Sources */,
+				5D0189582C9B51CC00AE738E /* AppDelegate.swift in Sources */,
+				5D01898E2C9E2C1800AE738E /* MovieCell.swift in Sources */,
+				5D01895A2C9B51CC00AE738E /* SceneDelegate.swift in Sources */,
+				5D0189942C9E2C7400AE738E /* FavoritesManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D0189662C9B51CF00AE738E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D01896F2C9B51CF00AE738E /* WisdomLeafTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D0189702C9B51CF00AE738E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D0189792C9B51CF00AE738E /* WisdomLeafUITests.swift in Sources */,
+				5D01897B2C9B51CF00AE738E /* WisdomLeafUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D01896C2C9B51CF00AE738E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D0189532C9B51CC00AE738E /* WisdomLeaf */;
+			targetProxy = 5D01896B2C9B51CF00AE738E /* PBXContainerItemProxy */;
+		};
+		5D0189762C9B51CF00AE738E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D0189532C9B51CC00AE738E /* WisdomLeaf */;
+			targetProxy = 5D0189752C9B51CF00AE738E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5D01895D2C9B51CC00AE738E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D01895E2C9B51CC00AE738E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5D0189622C9B51CE00AE738E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D0189632C9B51CE00AE738E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D01897C2C9B51CF00AE738E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5D01897D2C9B51CF00AE738E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D01897F2C9B51CF00AE738E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WisdomLeaf/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.wisdomleaf.WisdomLeaf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5D0189802C9B51CF00AE738E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WisdomLeaf/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.wisdomleaf.WisdomLeaf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5D0189822C9B51CF00AE738E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.wisdomleaf.WisdomLeafTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WisdomLeaf.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WisdomLeaf";
+			};
+			name = Debug;
+		};
+		5D0189832C9B51CF00AE738E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.wisdomleaf.WisdomLeafTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WisdomLeaf.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WisdomLeaf";
+			};
+			name = Release;
+		};
+		5D0189852C9B51CF00AE738E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.wisdomleaf.WisdomLeafUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WisdomLeaf;
+			};
+			name = Debug;
+		};
+		5D0189862C9B51CF00AE738E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.wisdomleaf.WisdomLeafUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WisdomLeaf;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D01894F2C9B51CB00AE738E /* Build configuration list for PBXProject "WisdomLeaf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D01897C2C9B51CF00AE738E /* Debug */,
+				5D01897D2C9B51CF00AE738E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D01897E2C9B51CF00AE738E /* Build configuration list for PBXNativeTarget "WisdomLeaf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D01897F2C9B51CF00AE738E /* Debug */,
+				5D0189802C9B51CF00AE738E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D0189812C9B51CF00AE738E /* Build configuration list for PBXNativeTarget "WisdomLeafTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D0189822C9B51CF00AE738E /* Debug */,
+				5D0189832C9B51CF00AE738E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D0189842C9B51CF00AE738E /* Build configuration list for PBXNativeTarget "WisdomLeafUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D0189852C9B51CF00AE738E /* Debug */,
+				5D0189862C9B51CF00AE738E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D01894C2C9B51CB00AE738E /* Project object */;
+}
